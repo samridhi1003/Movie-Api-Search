@@ -1,0 +1,49 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<h1>Movie Search Results Page</h1>
+<style media="screen">
+  img {
+    max-width :120px;
+  }
+  .container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+  .movie {
+    display: flex;
+    align-items: center;
+    width: 28%;
+    margin: 1%;
+    justify-content: space-between;
+  }
+  h5 {
+    font-size :20px;
+    margin-right: 30px;
+    font-weight: 400;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+@media screen and (max-width: 1080px) and (min-width: 640px) {
+  .movie {
+    width: 40%;
+    margin: 5%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .movie {
+    width: 90%;
+    margin: 5%;
+  }
+}
+</style>
+
+
+<div class="container">
+  <% results['Search'].forEach(function(movie) { %>
+    <div class="movie"><h5><strong><%= movie['Title'] %></strong> - <%= movie['Year'] %> </h5><img src="<%= movie['Poster'] %>"></div>
+  <% }); %>
+</div>

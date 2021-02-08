@@ -1,0 +1,31 @@
+{
+  "name": "movie_search_api",
+  "version": "1.0.0",
+  "description": "Movie Search API App from Colt Steele Web developer Bootcamp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArjunThiraviam/Movie-Search-API.git"
+  },
+  "keywords": [
+    "IMDB",
+    "OMDB",
+    "movie\u001b[1;5D\u001b[5;5~\u001b[1;5D\u001b[1;5D\u001b[M\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[C",
+    "Search"
+  ],
+  "author": "Samridhi Garg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArjunThiraviam/Movie-Search-API/issues"
+  },
+  "homepage": "https://github.com/ArjunThiraviam/Movie-Search-API#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "require": "^2.4.20"
+  }
+}
